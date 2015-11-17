@@ -14,10 +14,14 @@ new_hash.each do |k, v|
 end
 
 def add_fam
+	if family.nil?
+	family = []
+	end
 	print "Add a relative"
-family = Array.new(5){|r| (r=gets.chomp).to_s}
-
-	family.each {|fam| puts "Family member:" + fam.to_s}
-	
+	name = gets.chomp
+	family.push(name.to_s)
+	unless name == "Theo"
+	family.each {|fam| puts "Family member: " + fam.to_s}
+	end
 end
 add_fam
