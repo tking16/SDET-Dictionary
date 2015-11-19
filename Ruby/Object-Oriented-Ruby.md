@@ -27,18 +27,18 @@ def preen
 	end
 	end
 		
-class Penguin < Bird
-	def fly
-		puts "sorry. I'd rather swim"
-	end
-	end
+		class Penguin < Bird
+			def fly
+				puts "sorry. I'd rather swim"
+			end
+			end
 	
-	###Access Control
+###Access Control
 	-public
 	-protected(rarely used)
 	-private - can't be called with an explicit receiver
 		
-		when writing code just put the accessor keyword and anything underneath will become private/public etc.
+when writing code just put the accessor keyword and anything underneath will become private/public etc.
 	##Modules
 	a module allows us to group together various different classes.
 	we can have modules within modules
