@@ -22,7 +22,8 @@ lets us drive webrowsers
 -JavaScript
 
 ##Selenium and Ruby
-`Gem install selenium-webdriver
+
+    Gem install selenium-webdriver
 
 how to use it
 
@@ -44,32 +45,36 @@ how to use it
 
 *get driver title*
 
-`driver.title
+    driver.title
 
 Check the title of the page sstarts with "hello"
-`driver.title.downcase.start_with? "hello!" 
+
+    driver.title.downcase.start_with? "hello!" 
 
 *to quit*
 
-`driver.quit
+    driver.quit
 
 *reset driver*
 
-`driver = nil
+    driver = nil
 
 ###more commands
 browser = Selenium::WebDriver.for :firefox
 
 sends you to another browser
-browser.navigateto
+
+    browser.navigate.to "www.example.co.uk"
 
 *get page source*
-browser.page_source
 
-browser.page_source.match /Hello/
+    browser.page_source
+
+    browser.page_source.match /Hello/
 
 *execute some javascript*
-browser.execute_script "alert('Hello');"
+
+    browser.execute_script "alert('Hello');"
 
 ####methods
 `browser.manage.methods - Object.new.methods
@@ -79,15 +84,16 @@ browser.execute_script "alert('Hello');"
     a = browser.find_element({name: "textarea"}) - find the box with the name textarea. You dont need the parenthesis
     a = browser.find_element name: "textarea"
 *finding CSS selectors*
-browser.find_element css: "ul.navigation li"
+
+    browser.find_element css: "ul.navigation li"
 
 *to find something witout a name*
 
-`a = browser.find_element tagname ".pageheader p"
+    a = browser.find_element tagname ".pageheader p"
 
 using xpath
 
-a = browser.find_element xpath "//h2[@class='someclass'"
+    a = browser.find_element xpath "//h2[@class='someclass'"
 
     browser.find_elements tagname: "p" - will return array of all tagnames on page
 
@@ -96,7 +102,8 @@ a = browser.find_element xpath "//h2[@class='someclass'"
 **property methods**
 
 lets assume 
-`a = browser.find_element name: "searchbox"
+
+    a = browser.find_element name: "searchbox"
 
     a.size #gets the size
 
