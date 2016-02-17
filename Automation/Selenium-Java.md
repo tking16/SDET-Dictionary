@@ -1,4 +1,4 @@
-#Selenium with Java
+#Selenium with Java :coffee:
 
 ###Set up
 
@@ -14,11 +14,11 @@ WebDriver driver = new ChromeDriver();
 
 *by name*
 
-`WebElement element = driver.findElement(By.name("searchTextBox"));
+`WebElement element = driver.findElement(By.name("searchTextBox"));`
 
 *by id*
 
-`WebElement element = driver.findElement(By.id("gsr"));
+`WebElement element = driver.findElement(By.id("gsr"));`
 
 *by link*
 
@@ -32,19 +32,19 @@ WebDriver driver = new ChromeDriver();
 
 *HTML tags*
 
-`List<WebElement> listItems = driver.findElements(By.tagName("li"));
+`List<WebElement> listItems = driver.findElements(By.tagName("li"));`
 
 *class name*
 
-`List<WebElement> elements = driver.findElements(By.className("hdtb-imb"));
+`List<WebElement> elements = driver.findElements(By.className("hdtb-imb"));`
 
 *CSS*
 
-`List<WebElement> elements = driver.findElements(By.cssSelector("a:link"));
+`List<WebElement> elements = driver.findElements(By.cssSelector("a:link"));`
 
 *XPath*
 
-`List<WebElement> elements = driver.findElements(By.xpath("//div//a"));
+`List<WebElement> elements = driver.findElements(By.xpath("//div//a"));`
 
 **Iteration example**
 
