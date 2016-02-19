@@ -55,8 +55,20 @@ WebDriver driver = new ChromeDriver();
         
 ^Stream acts just like a for loop and allows you to perform operations on a sequence of elements
 
+*Click on an array item*
+
+        List<WebElement> buttons = driver.findElements(By.className("btn-primary"));
+        buttons.get(2).click();
+
 ####Waits
 
 **Implicit Waits**
 
+`WebDriverWait waiter = new WebDriverWait(driver, 10);` 
+
 `driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);` - import the correct package if you get an error
+
+####Navigation
+
+`driver.navigate().back` - go back
+`driver.navigate().refresh` - refresh the page
