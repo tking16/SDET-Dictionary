@@ -18,9 +18,11 @@ from selenium import webdriver
 `element = browser.find_element_by_id("gs_70")`
 
 click
+
 `element.click()`
 
 input text
+
 `element.send_keys("hello")
 
 ####Checkboxes and Radio buttons
